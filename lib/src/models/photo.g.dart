@@ -8,10 +8,10 @@ part of 'photo.dart';
 
 _$Photo$Impl _$$Photo$ImplFromJson(Map<String, dynamic> json) => _$Photo$Impl(
       id: json['id'] as String,
-      author: json['author'] as String? ?? '',
-      imageUrl: json['imageUrl'] as String? ?? '',
-      authorProfileUrl: json['authorProfileUrl'] as String? ?? '',
-      color: json['color'] as String? ?? '',
+      author: json['author'] as String,
+      imageUrl: json['imageUrl'] as String,
+      authorProfileUrl: json['authorProfileUrl'] as String,
+      color: json['color'] as String,
     );
 
 Map<String, dynamic> _$$Photo$ImplToJson(_$Photo$Impl instance) =>
