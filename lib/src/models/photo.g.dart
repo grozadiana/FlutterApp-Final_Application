@@ -12,9 +12,7 @@ _$PhotoImpl _$$PhotoImplFromJson(Map<String, dynamic> json) => _$PhotoImpl(
       authorName: json['authorName'] as String? ?? 'Unknown Author',
       imageUrl: json['imageUrl'] as String? ?? '',
       authorProfileUrl: json['authorProfileUrl'] as String? ?? '',
-      createdAt: json['createdAt'] == null
-          ? null
-          : DateTime.parse(json['createdAt'] as String),
+      createdAt: json['createdAt'] == null ? null : DateTime.parse(json['createdAt'] as String),
       description: json['description'] as String?,
       altDescription: json['altDescription'] as String?,
       urls: (json['urls'] as Map<String, dynamic>?)?.map(
@@ -22,8 +20,7 @@ _$PhotoImpl _$$PhotoImplFromJson(Map<String, dynamic> json) => _$PhotoImpl(
       ),
     );
 
-Map<String, dynamic> _$$PhotoImplToJson(_$PhotoImpl instance) =>
-    <String, dynamic>{
+Map<String, dynamic> _$$PhotoImplToJson(_$PhotoImpl instance) => <String, dynamic>{
       'id': instance.id,
       'author': instance.author,
       'authorName': instance.authorName,

@@ -37,8 +37,7 @@ mixin _$Photo {
 
 /// @nodoc
 abstract class $PhotoCopyWith<$Res> {
-  factory $PhotoCopyWith(Photo value, $Res Function(Photo) then) =
-      _$PhotoCopyWithImpl<$Res, Photo>;
+  factory $PhotoCopyWith(Photo value, $Res Function(Photo) then) = _$PhotoCopyWithImpl<$Res, Photo>;
   @useResult
   $Res call(
       {String? id,
@@ -53,8 +52,7 @@ abstract class $PhotoCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PhotoCopyWithImpl<$Res, $Val extends Photo>
-    implements $PhotoCopyWith<$Res> {
+class _$PhotoCopyWithImpl<$Res, $Val extends Photo> implements $PhotoCopyWith<$Res> {
   _$PhotoCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
@@ -118,9 +116,7 @@ class _$PhotoCopyWithImpl<$Res, $Val extends Photo>
 
 /// @nodoc
 abstract class _$$PhotoImplCopyWith<$Res> implements $PhotoCopyWith<$Res> {
-  factory _$$PhotoImplCopyWith(
-          _$PhotoImpl value, $Res Function(_$PhotoImpl) then) =
-      __$$PhotoImplCopyWithImpl<$Res>;
+  factory _$$PhotoImplCopyWith(_$PhotoImpl value, $Res Function(_$PhotoImpl) then) = __$$PhotoImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -136,12 +132,9 @@ abstract class _$$PhotoImplCopyWith<$Res> implements $PhotoCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$PhotoImplCopyWithImpl<$Res>
-    extends _$PhotoCopyWithImpl<$Res, _$PhotoImpl>
+class __$$PhotoImplCopyWithImpl<$Res> extends _$PhotoCopyWithImpl<$Res, _$PhotoImpl>
     implements _$$PhotoImplCopyWith<$Res> {
-  __$$PhotoImplCopyWithImpl(
-      _$PhotoImpl _value, $Res Function(_$PhotoImpl) _then)
-      : super(_value, _then);
+  __$$PhotoImplCopyWithImpl(_$PhotoImpl _value, $Res Function(_$PhotoImpl) _then) : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
@@ -212,8 +205,7 @@ class _$PhotoImpl implements _Photo {
       final Map<String, String>? urls})
       : _urls = urls;
 
-  factory _$PhotoImpl.fromJson(Map<String, dynamic> json) =>
-      _$$PhotoImplFromJson(json);
+  factory _$PhotoImpl.fromJson(Map<String, dynamic> json) => _$$PhotoImplFromJson(json);
 
   @override
   final String? id;
@@ -257,40 +249,24 @@ class _$PhotoImpl implements _Photo {
             other is _$PhotoImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.author, author) || other.author == author) &&
-            (identical(other.authorName, authorName) ||
-                other.authorName == authorName) &&
-            (identical(other.imageUrl, imageUrl) ||
-                other.imageUrl == imageUrl) &&
-            (identical(other.authorProfileUrl, authorProfileUrl) ||
-                other.authorProfileUrl == authorProfileUrl) &&
-            (identical(other.createdAt, createdAt) ||
-                other.createdAt == createdAt) &&
-            (identical(other.description, description) ||
-                other.description == description) &&
-            (identical(other.altDescription, altDescription) ||
-                other.altDescription == altDescription) &&
+            (identical(other.authorName, authorName) || other.authorName == authorName) &&
+            (identical(other.imageUrl, imageUrl) || other.imageUrl == imageUrl) &&
+            (identical(other.authorProfileUrl, authorProfileUrl) || other.authorProfileUrl == authorProfileUrl) &&
+            (identical(other.createdAt, createdAt) || other.createdAt == createdAt) &&
+            (identical(other.description, description) || other.description == description) &&
+            (identical(other.altDescription, altDescription) || other.altDescription == altDescription) &&
             const DeepCollectionEquality().equals(other._urls, _urls));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      author,
-      authorName,
-      imageUrl,
-      authorProfileUrl,
-      createdAt,
-      description,
-      altDescription,
-      const DeepCollectionEquality().hash(_urls));
+  int get hashCode => Object.hash(runtimeType, id, author, authorName, imageUrl, authorProfileUrl, createdAt,
+      description, altDescription, const DeepCollectionEquality().hash(_urls));
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$PhotoImplCopyWith<_$PhotoImpl> get copyWith =>
-      __$$PhotoImplCopyWithImpl<_$PhotoImpl>(this, _$identity);
+  _$$PhotoImplCopyWith<_$PhotoImpl> get copyWith => __$$PhotoImplCopyWithImpl<_$PhotoImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -334,6 +310,5 @@ abstract class _Photo implements Photo {
   Map<String, String>? get urls;
   @override
   @JsonKey(ignore: true)
-  _$$PhotoImplCopyWith<_$PhotoImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$PhotoImplCopyWith<_$PhotoImpl> get copyWith => throw _privateConstructorUsedError;
 }
