@@ -33,13 +33,16 @@ mixin _$Review {
 
 /// @nodoc
 abstract class $ReviewCopyWith<$Res> {
-  factory $ReviewCopyWith(Review value, $Res Function(Review) then) = _$ReviewCopyWithImpl<$Res, Review>;
+  factory $ReviewCopyWith(Review value, $Res Function(Review) then) =
+      _$ReviewCopyWithImpl<$Res, Review>;
   @useResult
-  $Res call({String id, String text, String uid, DateTime createdAt, String photoId});
+  $Res call(
+      {String id, String text, String uid, DateTime createdAt, String photoId});
 }
 
 /// @nodoc
-class _$ReviewCopyWithImpl<$Res, $Val extends Review> implements $ReviewCopyWith<$Res> {
+class _$ReviewCopyWithImpl<$Res, $Val extends Review>
+    implements $ReviewCopyWith<$Res> {
   _$ReviewCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
@@ -83,17 +86,22 @@ class _$ReviewCopyWithImpl<$Res, $Val extends Review> implements $ReviewCopyWith
 
 /// @nodoc
 abstract class _$$Review$ImplCopyWith<$Res> implements $ReviewCopyWith<$Res> {
-  factory _$$Review$ImplCopyWith(_$Review$Impl value, $Res Function(_$Review$Impl) then) =
+  factory _$$Review$ImplCopyWith(
+          _$Review$Impl value, $Res Function(_$Review$Impl) then) =
       __$$Review$ImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String id, String text, String uid, DateTime createdAt, String photoId});
+  $Res call(
+      {String id, String text, String uid, DateTime createdAt, String photoId});
 }
 
 /// @nodoc
-class __$$Review$ImplCopyWithImpl<$Res> extends _$ReviewCopyWithImpl<$Res, _$Review$Impl>
+class __$$Review$ImplCopyWithImpl<$Res>
+    extends _$ReviewCopyWithImpl<$Res, _$Review$Impl>
     implements _$$Review$ImplCopyWith<$Res> {
-  __$$Review$ImplCopyWithImpl(_$Review$Impl _value, $Res Function(_$Review$Impl) _then) : super(_value, _then);
+  __$$Review$ImplCopyWithImpl(
+      _$Review$Impl _value, $Res Function(_$Review$Impl) _then)
+      : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
@@ -133,10 +141,15 @@ class __$$Review$ImplCopyWithImpl<$Res> extends _$ReviewCopyWithImpl<$Res, _$Rev
 @JsonSerializable()
 class _$Review$Impl extends Review$ {
   const _$Review$Impl(
-      {required this.id, required this.text, required this.uid, required this.createdAt, required this.photoId})
+      {required this.id,
+      required this.text,
+      required this.uid,
+      required this.createdAt,
+      required this.photoId})
       : super._();
 
-  factory _$Review$Impl.fromJson(Map<String, dynamic> json) => _$$Review$ImplFromJson(json);
+  factory _$Review$Impl.fromJson(Map<String, dynamic> json) =>
+      _$$Review$ImplFromJson(json);
 
   @override
   final String id;
@@ -162,18 +175,21 @@ class _$Review$Impl extends Review$ {
             (identical(other.id, id) || other.id == id) &&
             (identical(other.text, text) || other.text == text) &&
             (identical(other.uid, uid) || other.uid == uid) &&
-            (identical(other.createdAt, createdAt) || other.createdAt == createdAt) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
             (identical(other.photoId, photoId) || other.photoId == photoId));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, id, text, uid, createdAt, photoId);
+  int get hashCode =>
+      Object.hash(runtimeType, id, text, uid, createdAt, photoId);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$Review$ImplCopyWith<_$Review$Impl> get copyWith => __$$Review$ImplCopyWithImpl<_$Review$Impl>(this, _$identity);
+  _$$Review$ImplCopyWith<_$Review$Impl> get copyWith =>
+      __$$Review$ImplCopyWithImpl<_$Review$Impl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -206,5 +222,6 @@ abstract class Review$ extends Review {
   String get photoId;
   @override
   @JsonKey(ignore: true)
-  _$$Review$ImplCopyWith<_$Review$Impl> get copyWith => throw _privateConstructorUsedError;
+  _$$Review$ImplCopyWith<_$Review$Impl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
